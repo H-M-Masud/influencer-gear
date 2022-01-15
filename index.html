@@ -24,13 +24,6 @@
                 <li><a href="#">Log in</a></li>
                 <li><a href="#"><i class="fas fa-search"></i></a></li>
                 <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                <!--  -->
-                <!-- <i class="fab fa-instagram-square"></i> -->
-                <!-- <i class="fab fa-twitter-square"></i> -->
-                <!-- <i class="fab fa-facebook-square"></i> -->
-                <!-- <i class="fab fa-youtube"></i> -->
-                <!-- <i class="fas fa-star"></i> -->
-                <!-- <i class="fas fa-star-half-alt"></i> -->
             </ul>
         </nav>
         <section>
@@ -52,8 +45,8 @@
 
     <!-- main starts hear -->
     <main class="container">
-        <!-- card section -->
-        <section class="card-container">
+        <!-- card section starts-->
+        <section>
             <h2 class="card-title">Popular Collection</h2>
             <div class="cards">
                 <div class="card">
@@ -226,15 +219,61 @@
                             
                             Buyers protection possible!</small></p>
                     </div>
-                </div>
+                </div>  
             </div>
+            <p style="text-align: right; color: #E02C6D;">see More <i class="fas fa-arrow-right"></i></p>
         </section>
+         <!-- card section ends-->
+
+         <!-- contact section Bonus part starts-->
+         <section>
+            <div class="container">
+                <div style="text-align:center">
+                  <h2>Contact Us</h2>
+                  <p>Swing by for a cup of coffee, or leave us a message:</p>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <img src="images/contact.jpg" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <form action="#">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="country">Country</label>
+                      <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <option value="bangladesh">Bangladesh/option>
+                      </select>
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+              </div>
+         </section>
+            <!-- contact section Bonus part ends-->
     </main>
     <!-- main ends hear -->
 
     <!-- footer starts hear -->
-    <footer>
-        <p>This is footer</p>
+    <footer class="container">
+        <div class="footer-container">
+            <h4>Influencer Products</h4>
+            <p><small>Copyright &copy;2022 Influencer Products</small></p>
+            <p><small>All rights reserved</small></p>
+            <p>
+                <span><i class="fab fa-instagram-square social-icon"></i></span>
+                <span><i class="fab fa-twitter-square social-icon"></i> </span>
+                <span><i class="fab fa-facebook-square social-icon"></i> </span>
+                <span><i class="fab fa-youtube social-icon"></i> </span>
+            </p>
+        </div>
     </footer>
     <!-- footer ends hear -->
 </body>
