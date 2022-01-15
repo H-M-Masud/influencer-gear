@@ -12,18 +12,23 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-/* common class */
+/**************************************************
+         common class 
+**************************************************/
 .container{
     max-width: 1100px;
     margin: 0 auto;
     background-color: #fafafa;
-    padding: 50px 30px;
+    padding: 50px 50px;
+    border-radius: 10px;
 }
 :root{
     --custom-color:#E02C6D;
 }
 
-/* header style starts */
+/**************************************************
+             header style starts 
+**************************************************/
 nav{
     display: flex;
     justify-content: space-between;
@@ -42,7 +47,9 @@ nav{
     border-radius: 5px;
 }
 
-/* banner style starts */
+/**************************************************
+             banner style starts 
+**************************************************/
 .banner{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -56,6 +63,88 @@ nav{
     font-size: 3em;
     margin-bottom: 10px;
 }
+
+/**************************************************
+    your mouse on header then start animation 
+ **************************************************/
+header:hover .influencer{
+    position: relative;
+    white-space: nowrap;
+    color: transparent;
+}
+header:hover .influencer::before{
+    content: 'Influencer';
+    color: var(--custom-color);
+    position: absolute;
+    animation: typing 5s linear infinite;
+}
+
+@keyframes typing {
+    0%{
+        content: '|';
+    }
+    5%{
+        content: 'I|';
+    }
+    10%{
+        content: 'In|';
+    }
+    15%{
+        content: 'Inf|';
+    }
+    20%{
+        content: 'Infl|';
+    }
+    25%{
+        content: 'Influ|';
+    }
+    30%{
+        content: 'Influe|';
+    }
+    35%{
+        content: 'Influen|';
+    }
+    40%{
+        content: 'Influenc|';
+    }
+    45%{
+        content: 'Influence|';
+    }
+    50%{
+        content: 'Influencer|';
+    }
+    55%{
+        content: 'Influence|';
+    }
+    60%{
+        content: 'Influenc|';
+    }
+    65%{
+        content: 'Influen|';
+    }
+    70%{
+        content: 'Influe|';
+    }
+    75%{
+        content: 'Influ|';
+    }
+    80%{
+        content: 'Infl|';
+    }
+    85%{
+        content: 'Inf|';
+    }
+    90%{
+        content: 'Inf|';
+    }
+    95%{
+        content: 'In|';
+    }
+    100%{
+        content: 'I|';
+    }
+}
+
 .banner-left p{
     line-height: 2;
 }
@@ -82,9 +171,13 @@ nav{
     justify-self: center;
     align-items: center;
 }
-/* banner style ends */
+/**************************************************
+                 banner style ends 
+**************************************************/
 
-/* card style starts */
+/**************************************************
+                card style starts 
+ **************************************************/
 .card-title{
     text-align: center;
     margin-bottom: 20px;
@@ -122,9 +215,13 @@ nav{
 .card-img{
     width: 100%;
 }
-/* card style ends */
+/**************************************************
+            card style ends 
+**************************************************/
 
-/* contact styles  starts*/
+/**************************************************
+         contact styles  starts
+**************************************************/
 /* Style inputs */
 input[type=text], select, textarea {
     width: 100%;
@@ -135,7 +232,7 @@ input[type=text], select, textarea {
     resize: vertical;
   }
 
-input[type=submit] {
+input[type=submit] ,input[type=reset]{
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
@@ -143,7 +240,7 @@ input[type=submit] {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
+  input[type=submit]:hover,input[type=reset]:hover{
     background-color: #45a049;
   }
   
@@ -168,10 +265,16 @@ input[type=submit] {
     display: table;
     clear: both;
   }
-/* contact styles  ends*/
 
 
-/* footer style starts */
+/**************************************************
+         contact styles  ends
+**************************************************/
+
+
+/**************************************************
+             footer style starts 
+**************************************************/
 .footer-container{
     text-align: center;
     background-color: #130f40;
@@ -188,9 +291,13 @@ input[type=submit] {
     margin-right: 10px;
     border-radius: 50%;
 }
-/* footer style ends */
+/**************************************************
+         footer style ends 
+**************************************************/
 
-/* mobile device */
+/**************************************************
+             responsive for mobile device starts
+**************************************************/
 @media screen and (max-width:688px) {
     .container{
         width: 100%;
@@ -226,8 +333,14 @@ input[type=submit] {
         margin-top: 0;
       }
 }
+/**************************************************
+        responsive for mobile device ends
+**************************************************/
 
-/* tablet device */
+
+/**************************************************
+            responsive for tablet device starts
+**************************************************/
 @media screen and (min-width:689px) and (max-width:992px) {
     .container{
         width: 100%;
@@ -236,3 +349,7 @@ input[type=submit] {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/**************************************************
+        responsive for tablet device ends
+**************************************************/
